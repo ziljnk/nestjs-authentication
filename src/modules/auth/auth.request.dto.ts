@@ -8,6 +8,6 @@ export class AuthRequest {
 
     @IsString({ message: "Password must be string" })
     @IsNotEmpty({ message: "Password must not be empty" })
-    @MinLength(8, { message: "Password must have at least 8 characters" })
+    @MinLength(6, { message: "Password must have at least 6 characters" })
     password: string
 }

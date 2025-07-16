@@ -1,8 +1,8 @@
 import * as bcrypt from "bcrypt"
-import { PrismaClient } from "../../generated/prisma";
+import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 async function main() {
-	const saltOrRounds = 20
+	const saltOrRounds = 10
 
 	const user = await prisma.user.create({
 		data: {
